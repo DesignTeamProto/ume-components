@@ -7,6 +7,8 @@
     "@material/react-button": "^0.6.1",
     "@material/theme": "^0.41.0",
     "classnames": "^2.2.6",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
@@ -20,7 +22,7 @@
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --verbose=true",
     "eject": "react-scripts eject",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build"
@@ -36,8 +38,6 @@
   ],
   "devDependencies": {
     "babel-polyfill": "^6.26.0",
-    "enzyme": "^3.7.0",
-    "enzyme-adapter-react-16": "^1.6.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",

@@ -4,7 +4,7 @@ import Button from '.';
 
 describe('<Button />', () => {
   let wrapper;
-  const text = 'Primary';
+  const text = 'Default';
 
   beforeEach(() => {
     wrapper = shallow((
