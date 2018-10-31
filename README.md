@@ -29,10 +29,14 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `yarn styleguide`
 
-Runs the styleguide
+Runs the styleguide<br>
 Open [http://localhost:6060](http://localhost:6060) to view it in the browser.
 
-The page will reload if you make edits.<br>
+The page will reload if you make edits.
+
+### `yarn styleguide:build`
+
+Builds the styleguide for production to the `styleguide` folder.
 
 ### `yarn run eject`
 
