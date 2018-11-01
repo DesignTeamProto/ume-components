@@ -10,10 +10,10 @@ const colors = {
   grey: '#7A7A7A',
   lightGrey: '#DEDEDE',
   paleGrey: '#EFEFEF',
-  primary: '#5D5CC5',
-  secondary: '#58AEB5',
-  tertiary: '#001134',
-  danger: '#DC3732',
+  primary: '#262039',
+  secondary: '#19AEC0',
+  tertiary: '#0B1222',
+  danger: '#E9725C',
 };
 
 const theme = {

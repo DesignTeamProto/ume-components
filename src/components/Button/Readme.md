@@ -11,5 +11,23 @@ import Button from '../Button';
 Standard use:
 
 ```js
-<Button raised>Default</Button>
+<ButtonGroup>
+  <Button raised>Raised</Button>
+  <Button unelevated>Unelevated</Button>
+  <Button outlined>Outlined</Button>
+  <Button dense>Dense</Button>
+  <Button disabled>Disabled</Button>
+</ButtonGroup>
+```
+
+Create hyperlink and use anchor tag instead of a button
+
+```js
+<Button href="/">Link</Button>
+```
+
+Apply class to the button
+
+```js
+<Button unelevated className="button--terminate">Terminate</Button>
 ```

@@ -1,12 +1,12 @@
 import React from 'react';
-import Button from '@material/react-button/dist'; // /index.js is implied
+import Button from '@material/react-button';
 import './App.css';
 
 function App() {
   return (
     <Button
       raised
-      className="button-alternate"
+      className="button--terminate"
       onClick={() => console.log('clicked!')}
     >
       Click Me!

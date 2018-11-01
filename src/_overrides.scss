@@ -1,5 +1,7 @@
+/* Button overrides */
+
 @import "@material/button/mixins";
 
-.button-alternate {
-  @include mdc-button-container-fill-color($mdc-theme-secondary);
+.button--terminate {
+  @include mdc-button-container-fill-color($mdc-theme-error);
 }
