@@ -15,6 +15,10 @@ steps:
 - script: |
     npm install
     npm install -g yarn
-    yarn add yarn-run-all 
+    yarn add yarn-run-all
     yarn build
   displayName: 'npm/yarn install and build'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(System.DefaultWorkingDirectory)'
