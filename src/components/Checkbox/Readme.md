@@ -11,5 +11,8 @@ import Checkbox from '../Checkbox';
 Standard use:
 
 ```js
-<Checkbox raised>Default</Checkbox>
+<Checkbox />
+<Checkbox checked />
+<Checkbox indeterminate />
+<Checkbox disabled />
 ```
