@@ -112,27 +112,27 @@
   .mdc-button:not(:disabled) {
     background-color: transparent; }
   .mdc-button:not(:disabled) {
-    color: #5D5CC5;
+    color: #19AEC0;
     /* @alternate */
-    color: var(--mdc-theme-primary, #5D5CC5); }
+    color: var(--mdc-theme-primary, #19AEC0); }
   .mdc-button::before, .mdc-button::after {
-    background-color: #5D5CC5; }
+    background-color: #19AEC0; }
     @supports not (-ms-ime-align: auto) {
       .mdc-button::before, .mdc-button::after {
         /* @alternate */
-        background-color: var(--mdc-theme-primary, #5D5CC5); } }
+        background-color: var(--mdc-theme-primary, #19AEC0); } }
   .mdc-button:hover::before {
-    opacity: 0.04; }
+    opacity: 0.08; }
   .mdc-button:not(.mdc-ripple-upgraded):focus::before, .mdc-button.mdc-ripple-upgraded--background-focused::before {
     transition-duration: 75ms;
-    opacity: 0.12; }
+    opacity: 0.24; }
   .mdc-button:not(.mdc-ripple-upgraded)::after {
     transition: opacity 150ms linear; }
   .mdc-button:not(.mdc-ripple-upgraded):active::after {
     transition-duration: 75ms;
-    opacity: 0.16; }
+    opacity: 0.32; }
   .mdc-button.mdc-ripple-upgraded {
-    --mdc-ripple-fg-opacity: 0.16; }
+    --mdc-ripple-fg-opacity: 0.32; }
   .mdc-button .mdc-button__icon {
     /* @noflip */
     margin-left: 0;
@@ -177,12 +177,12 @@
     color: rgba(0, 0, 0, 0.37); }
   .mdc-button--raised:not(:disabled),
   .mdc-button--unelevated:not(:disabled) {
-    background-color: #5D5CC5; }
+    background-color: #19AEC0; }
     @supports not (-ms-ime-align: auto) {
       .mdc-button--raised:not(:disabled),
       .mdc-button--unelevated:not(:disabled) {
         /* @alternate */
-        background-color: var(--mdc-theme-primary, #5D5CC5); } }
+        background-color: var(--mdc-theme-primary, #19AEC0); } }
   .mdc-button--raised:not(:disabled),
   .mdc-button--unelevated:not(:disabled) {
     color: #fff;
@@ -234,13 +234,14 @@
   .mdc-button--outlined:disabled {
     border-color: rgba(0, 0, 0, 0.37); }
   .mdc-button--outlined:not(:disabled) {
-    border-color: #5D5CC5;
+    border-color: #19AEC0;
     /* @alternate */
-    border-color: var(--mdc-theme-primary, #5D5CC5); }
+    border-color: var(--mdc-theme-primary, #19AEC0); }
 
 .mdc-button--dense {
   height: 32px;
   font-size: .8125rem; }
 
-.button-alternate:not(:disabled) {
-  background-color: #58AEB5; }
+/* Button overrides */
+.button--terminate:not(:disabled) {
+  background-color: #E9725C; }

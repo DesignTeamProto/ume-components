@@ -2,10 +2,14 @@
   "name": "ume-components",
   "version": "1.12.1",
   "private": true,
-  "homepage": "https://designteamproto.github.io/components/",
+  "homepage": "https://designteamproto.github.io/ume-components/",
   "dependencies": {
     "@material/react-button": "^0.6.1",
+<<<<<<< HEAD
     "@material/react-checkbox": "^0.6.1",
+=======
+    "@material/react-ripple": "^0.6.1",
+>>>>>>> 99f44d31d9c0e834cae2755c4b58b00a63df5654
     "@material/theme": "^0.41.0",
     "classnames": "^2.2.6",
     "enzyme": "^3.7.0",
@@ -26,7 +30,9 @@
     "test": "react-scripts test --env=jsdom --verbose=true",
     "eject": "react-scripts eject",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -b gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
