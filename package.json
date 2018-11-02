@@ -2,7 +2,7 @@
   "name": "ume-components",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://designteamproto.github.io/components/",
+  "homepage": "https://designteamproto.github.io/ume-components/",
   "dependencies": {
     "@material/react-button": "^0.6.1",
     "@material/react-ripple": "^0.6.1",
