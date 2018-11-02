@@ -15,6 +15,7 @@ Standard use:
   <Button raised>Raised</Button>
   <Button unelevated>Unelevated</Button>
   <Button outlined>Outlined</Button>
+  <Button>Text</Button>
   <Button dense>Dense</Button>
   <Button disabled>Disabled</Button>
 </ButtonGroup>

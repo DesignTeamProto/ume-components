@@ -16,6 +16,8 @@ steps:
     npm install
     npm install -g yarn
     yarn add yarn-run-all 
+    git config --global user.email "ronald.zwiers@embracesbs.com"
+    git config --global user.name "DesignTeamProto"
     git remote set-url origin https://github.com/DesignTeamProto/ume-components.git
     yarn deploy
   displayName: 'npm/yarn install and build'
