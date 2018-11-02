@@ -16,6 +16,7 @@ steps:
     npm install
     npm install -g yarn
     yarn add yarn-run-all 
-    yarn predeploy
+    git config user.email "ronald.zwiers@embracesbs.com"
+    git config user.name "DesignTeamProto"
     yarn deploy
   displayName: 'npm/yarn install and build'
