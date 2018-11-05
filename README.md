@@ -1,3 +1,5 @@
+[![Build Status](https://umbrella.visualstudio.com/UME/_apis/build/status/DesignTeamProto.ume-components)](https://umbrella.visualstudio.com/UME/_build/latest?definitionId=4)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
