@@ -14,8 +14,7 @@ steps:
 
 - script: |
     npm install
-    npm install -g yarn
-    yarn add yarn-run-all
-    yarn build
-    yarn jest --ci --reporters=default --reporters=jest-junit
-  displayName: 'npm/yarn install, build and test'
+    npm install yarn-run-all
+    npm run build
+    npm run jest-test
+  displayName: 'npm install, build and test'

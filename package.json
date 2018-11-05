@@ -25,6 +25,7 @@
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom --verbose=true",
+    "jest-test": "jest --ci --reporters=default --reporters=jest-junit",
     "eject": "react-scripts eject",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
