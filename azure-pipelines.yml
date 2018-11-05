@@ -18,3 +18,15 @@ steps:
     npm run build
     npm run jest-test
   displayName: 'npm install, build and test'
+
+  # Publish Test Results to Azure Pipelines/TFS
+- task: PublishTestResults@1
+  inputs:
+    testResultsFormat: 'JUnit' # Options: JUnit, NUnit, VSTest, xUnit
+    testResultsFiles: 'junit.xml' 
+    #searchFolder: '$(System.DefaultWorkingDirectory)' # Optional
+    #mergeTestResults: false # Optional
+    #testRunTitle: # Optional
+    #buildPlatform: # Optional
+    #buildConfiguration: # Optional
+    #publishRunAttachments: true # Optional
