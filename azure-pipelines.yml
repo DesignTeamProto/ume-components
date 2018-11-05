@@ -17,4 +17,5 @@ steps:
     npm install -g yarn
     yarn add yarn-run-all
     yarn build
-  displayName: 'npm/yarn install and build'
+    yarn test
+  displayName: 'npm/yarn install, build and test'
