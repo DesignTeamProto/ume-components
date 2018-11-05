@@ -7,8 +7,8 @@ const StyledCheckbox = styled(BaseCheckbox)`
   border-radius: 2px;
 `;
 
-const Checkbox = (props, { qaTag, accessibilityLabel }) => {
-  const dataProps = { 'data-qa': qaTag };
+const Checkbox = (props, { qaLabel, accessibilityLabel }) => {
+  const dataProps = { 'data-qa': qaLabel };
   const ariaProps = { 'aria-label': accessibilityLabel };
   return (
     <StyledCheckbox {...props} {...dataProps} {...ariaProps} />
@@ -20,7 +20,7 @@ Checkbox.propTypes = {
   accessibilityLabel: PropTypes.string,
 
   /** Quality assurance tag for testing purposes */
-  qaTag: PropTypes.string,
+  qaLabel: PropTypes.string,
 };
 
 export default Checkbox;

@@ -1,0 +1,22 @@
+<testsuites name="jest tests" tests="6" failures="0" time="2.848">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2018-11-05T12:31:15" time="0.789" tests="1">
+    <testcase classname=" renders without crashing" name=" renders without crashing" time="0.088">
+    </testcase>
+  </testsuite>
+  <testsuite name="&lt;Checkbox /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-11-05T12:31:15" time="1.396" tests="1">
+    <testcase classname="&lt;Checkbox /&gt; Basic validation renders without crashing" name="&lt;Checkbox /&gt; Basic validation renders without crashing" time="0.009">
+    </testcase>
+  </testsuite>
+  <testsuite name="&lt;ButtonGroup /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-11-05T12:31:15" time="1.399" tests="2">
+    <testcase classname="&lt;ButtonGroup /&gt; Basic validation renders without crashing" name="&lt;ButtonGroup /&gt; Basic validation renders without crashing" time="0.008">
+    </testcase>
+    <testcase classname="&lt;ButtonGroup /&gt; Basic validation has child element" name="&lt;ButtonGroup /&gt; Basic validation has child element" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="&lt;Button /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-11-05T12:31:15" time="0.649" tests="2">
+    <testcase classname="&lt;Button /&gt; Basic validation renders without crashing" name="&lt;Button /&gt; Basic validation renders without crashing" time="0.003">
+    </testcase>
+    <testcase classname="&lt;Button /&gt; Basic validation has child element" name="&lt;Button /&gt; Basic validation has child element" time="0.003">
+    </testcase>
+  </testsuite>
+</testsuites>

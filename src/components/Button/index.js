@@ -7,8 +7,8 @@ const StyledButton = styled(BaseButton)`
   border-radius: 2px;
 `;
 
-const Button = (props, { qaTag, accessibilityLabel }) => {
-  const dataProps = { 'data-qa': qaTag };
+const Button = (props, { qaLabel, accessibilityLabel }) => {
+  const dataProps = { 'data-qa': qaLabel };
   const ariaProps = { 'aria-label': accessibilityLabel };
   return (
     <StyledButton {...props} {...dataProps} {...ariaProps} />
@@ -20,7 +20,7 @@ Button.propTypes = {
   accessibilityLabel: PropTypes.string,
 
   /** Quality assurance tag for testing purposes */
-  qaTag: PropTypes.string,
+  qaLabel: PropTypes.string,
 };
 
 export default Button;
