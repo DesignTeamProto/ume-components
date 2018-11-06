@@ -13,7 +13,7 @@ module.exports = {
   styles,
   theme,
   require: [
-    'babel-polyfill',
+    '@babel/polyfill',
     path.join(__dirname, 'src/App.css'),
   ],
 };
