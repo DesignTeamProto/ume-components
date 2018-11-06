@@ -3,8 +3,10 @@
   "version": "0.1.4",
   "description": "UME components",
   "homepage": "https://designteamproto.github.io/ume-components/",
-  "license" : "See license in LICENSE.md",
+  "license": "See license in LICENSE.md",
   "dependencies": {
+    "@material/animation": "^0.41.0",
+    "@material/react-card": "^0.41.0",
     "@material/react-button": "^0.6.1",
     "@material/react-checkbox": "^0.6.1",
     "@material/react-ripple": "^0.6.1",
