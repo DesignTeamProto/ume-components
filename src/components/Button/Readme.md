@@ -3,7 +3,7 @@
 Use the following import to include the component in your file:
 
 ```jsx static
-import Button from '../Button';
+import Button from 'ume-components/Button';
 ```
 
 ### Examples
