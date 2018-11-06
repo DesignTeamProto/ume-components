@@ -1,13 +1,51 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const devMode = process.env.NODE_ENV !== 'production';
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+function recursiveIssuer(m) {
+  if (m.issuer) {
+    return recursiveIssuer(m.issuer);
+  } else if (m.name) {
+    return m.name;
+  } else {
+    return false;
+  }
+}
 
 module.exports = {
-  entry: './src/App.js',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+  entry: {
+    Button: path.resolve(__dirname, 'src/components/Button'),
+    ButtonGroup: path.resolve(__dirname, 'src/components/ButtonGroup'),
+    Checkbox: path.resolve(__dirname, 'src/components/Checkbox'),
   },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        ButtonStyles: {
+          name: 'Button',
+          test: (m,c,entry = 'Button') => m.constructor.name === 'CssModule' && recursiveIssuer(m) === entry,
+          chunks: 'all',
+          enforce: true
+        },
+        ButtonGroupStyles: {
+          name: 'ButtonGroup',
+          test: (m,c,entry = 'ButtonGroup') => m.constructor.name === 'CssModule' && recursiveIssuer(m) === entry,
+          chunks: 'all',
+          enforce: true
+        },
+        CheckboxStyles: {
+          name: 'Checkbox',
+          test: (m,c,entry = 'Checkbox') => m.constructor.name === 'CssModule' && recursiveIssuer(m) === entry,
+          chunks: 'all',
+          enforce: true
+        },
+      }
+    }
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+    })
+  ],
   module: {
     rules: [
       {
@@ -22,14 +60,7 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: 'babel-loader',
-      },
-    ],
-  },
-  devtool: 'source-map',
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: 'style.css',
-    }),
-  ],
-  mode: devMode ? 'development' : 'production',
-};
+      }
+    ]
+  }
+}
