@@ -1,11 +1,7 @@
 {
   "name": "ume-components",
-<<<<<<< HEAD
-  "version": "0.1.4",
-=======
   "version": "1.12.2",
   "private": true,
->>>>>>> refs/tags/v1.12.2^{}
   "homepage": "https://designteamproto.github.io/ume-components/",
   "dependencies": {
     "@material/react-button": "^0.6.1",
