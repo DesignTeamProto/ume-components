@@ -1,12 +1,9 @@
 {
   "name": "ume-components",
-<<<<<<< HEAD
   "version": "0.1.4",
-=======
-  "version": "1.12.2",
-  "private": true,
->>>>>>> refs/tags/v1.12.2^{}
+  "description": "UME components",
   "homepage": "https://designteamproto.github.io/ume-components/",
+  "license" : "See license in LICENSE.md",
   "dependencies": {
     "@material/react-button": "^0.6.1",
     "@material/react-checkbox": "^0.6.1",
