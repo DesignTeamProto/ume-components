@@ -4810,17 +4810,6 @@ glob-to-regexp@^0.3.0:
   resolved "https://registry.yarnpkg.com/glob-to-regexp/-/glob-to-regexp-0.3.0.tgz#8c5a1494d2066c570cc3bfe4496175acc4d502ab"
   integrity sha1-jFoUlNIGbFcMw7/kSWF1rMTVAqs=
 
-glob@^5.0.15:
-  version "5.0.15"
-  resolved "https://registry.yarnpkg.com/glob/-/glob-5.0.15.tgz#1bc936b9e02f4a603fcc222ecf7633d30b8b93b1"
-  integrity sha1-G8k2ueAvSmA/zCIuz3Yz0wuLk7E=
-  dependencies:
-    inflight "^1.0.4"
-    inherits "2"
-    minimatch "2 || 3"
-    once "^1.3.0"
-    path-is-absolute "^1.0.0"
-
 glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2, glob@~7.1.1:
   version "7.1.3"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.3.tgz#3960832d3f1574108342dafd3a67b332c0969df1"
@@ -7239,6 +7228,15 @@ mini-css-extract-plugin@0.4.3:
     schema-utils "^1.0.0"
     webpack-sources "^1.1.0"
 
+mini-css-extract-plugin@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-0.4.4.tgz#c10410a004951bd3cedac1da69053940fccb625d"
+  integrity sha512-o+Jm+ocb0asEngdM6FsZWtZsRzA8koFUudIDwYUfl94M3PejPHG7Vopw5hN9V8WsMkSFpm3tZP3Fesz89EyrfQ==
+  dependencies:
+    loader-utils "^1.1.0"
+    schema-utils "^1.0.0"
+    webpack-sources "^1.1.0"
+
 mini-html-webpack-plugin@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/mini-html-webpack-plugin/-/mini-html-webpack-plugin-0.2.3.tgz#2dfbdc3f35f6ae03864a608808381f8137311ea0"
@@ -7256,19 +7254,19 @@ minimalistic-crypto-utils@^1.0.0, minimalistic-crypto-utils@^1.0.1:
   resolved "https://registry.yarnpkg.com/minimalistic-crypto-utils/-/minimalistic-crypto-utils-1.0.1.tgz#f6c00c1c0b082246e5c4d99dfb8c7c083b2b582a"
   integrity sha1-9sAMHAsIIkblxNmd+4x8CDsrWCo=
 
-"minimatch@2 || 3", minimatch@3.0.4, minimatch@^3.0.2, minimatch@^3.0.3, minimatch@^3.0.4, minimatch@~3.0.2:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
-  integrity sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
-  dependencies:
-    brace-expansion "^1.1.7"
-
 minimatch@3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.3.tgz#2a4e4090b96b2db06a9d7df01055a62a77c9b774"
   integrity sha1-Kk5AkLlrLbBqnX3wEFWmKnfJt3Q=
   dependencies:
     brace-expansion "^1.0.0"
+
+minimatch@3.0.4, minimatch@^3.0.2, minimatch@^3.0.3, minimatch@^3.0.4, minimatch@~3.0.2:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
+  integrity sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
+  dependencies:
+    brace-expansion "^1.1.7"
 
 minimist@0.0.8:
   version "0.0.8"
@@ -11854,20 +11852,6 @@ webpack-dev-server@^2.11.2:
     supports-color "^5.1.0"
     webpack-dev-middleware "1.12.2"
     yargs "6.6.0"
-
-webpack-glob-entries@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/webpack-glob-entries/-/webpack-glob-entries-1.0.1.tgz#efd25ec6289c0c805c79f071fd31f195ac437895"
-  integrity sha1-79JexiicDIBcefBx/THxlaxDeJU=
-  dependencies:
-    glob "^5.0.15"
-
-webpack-glob-folder-entries@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/webpack-glob-folder-entries/-/webpack-glob-folder-entries-1.0.0.tgz#5c1e4a9e497a8a4c2fba9d5f0fe167f807a1f474"
-  integrity sha1-XB5Knkl6ikwvup1fD+Fn+Aeh9HQ=
-  dependencies:
-    glob "^5.0.15"
 
 webpack-log@^2.0.0:
   version "2.0.0"
