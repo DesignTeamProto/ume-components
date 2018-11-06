@@ -1,13 +1,10 @@
 {
   "name": "ume-components",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "UME components",
   "homepage": "https://designteamproto.github.io/ume-components/",
-  "license" : "See license in LICENSE.md",
+  "license": "See license in LICENSE.md",
   "main": "dist/components.js",
-  "files": [
-    "dist/components.js"
-  ],
   "dependencies": {
     "@material/react-button": "^0.6.1",
     "@material/react-checkbox": "^0.6.1",
@@ -35,7 +32,8 @@
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -b gh-pages -d build"
+    "deploy": "gh-pages -b gh-pages -d build",
+    "transpile": "babel src -d dist --copy-files"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -53,7 +51,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "babel-polyfill": "^6.26.0",
+    "@babel/cli": "^7.1.2",
+    "@babel/polyfill": "^7.0.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
