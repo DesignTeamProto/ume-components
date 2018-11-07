@@ -17,6 +17,10 @@ module.exports = {
     ButtonGroup: path.resolve(__dirname, 'src/components/ButtonGroup'),
     Checkbox: path.resolve(__dirname, 'src/components/Checkbox'),
   },
+  output: {
+    filename: '[name].js',
+    libraryTarget: 'commonjs2', // THIS IS THE MOST IMPORTANT LINE! :mindblow: I wasted more than 2 days until realize this was the line most important in all this guide.
+  },
   optimization: {
     splitChunks: {
       cacheGroups: {
