@@ -1,14 +1,14 @@
 const path = require('path');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 function recursiveIssuer(m) {
   if (m.issuer) {
     return recursiveIssuer(m.issuer);
-  } else if (m.name) {
-    return m.name;
-  } else {
-    return false;
   }
+  if (m.name) {
+    return m.name;
+  }
+  return false;
 }
 
 module.exports = {
@@ -22,29 +22,29 @@ module.exports = {
       cacheGroups: {
         ButtonStyles: {
           name: 'Button',
-          test: (m,c,entry = 'Button') => m.constructor.name === 'CssModule' && recursiveIssuer(m) === entry,
+          test: (m, c, entry = 'Button') => m.constructor.name === 'CssModule' && recursiveIssuer(m) === entry,
           chunks: 'all',
-          enforce: true
+          enforce: true,
         },
         ButtonGroupStyles: {
           name: 'ButtonGroup',
-          test: (m,c,entry = 'ButtonGroup') => m.constructor.name === 'CssModule' && recursiveIssuer(m) === entry,
+          test: (m, c, entry = 'ButtonGroup') => m.constructor.name === 'CssModule' && recursiveIssuer(m) === entry,
           chunks: 'all',
-          enforce: true
+          enforce: true,
         },
         CheckboxStyles: {
           name: 'Checkbox',
-          test: (m,c,entry = 'Checkbox') => m.constructor.name === 'CssModule' && recursiveIssuer(m) === entry,
+          test: (m, c, entry = 'Checkbox') => m.constructor.name === 'CssModule' && recursiveIssuer(m) === entry,
           chunks: 'all',
-          enforce: true
+          enforce: true,
         },
-      }
-    }
+      },
+    },
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "[name].css",
-    })
+      filename: '[name].css',
+    }),
   ],
   module: {
     rules: [
@@ -53,14 +53,20 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           { loader: 'css-loader', options: { url: false, sourceMap: true } },
-          { loader: 'sass-loader', options: { sourceMap: true } },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+              includePaths: ['node_modules'],
+            },
+          },
         ],
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
         use: 'babel-loader',
-      }
-    ]
-  }
-}
+      },
+    ],
+  },
+};
