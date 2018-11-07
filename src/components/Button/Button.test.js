@@ -11,7 +11,9 @@ describe('<Button />', () => {
 
   beforeEach(() => {
     wrapper = shallow((
-      <Button />));
+      <Button>
+        {text}
+      </Button>));
   });
 
   describe('Basic validation', () => {
