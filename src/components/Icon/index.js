@@ -1,22 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import './Component.scss';
+import BaseMaterialIcon from '@material/react-material-icon';
+import './Icon.scss';
 
-/* if needed, use styled components */
-const StyledElement = styled('div')`
-  background-color: green;
-`;
-
-const Button = ({ qaLabel, accessibilityLabel }) => {
+const Icon = (props, { qaLabel, accessibilityLabel }) => {
   const dataProps = { 'data-qa': qaLabel };
   const ariaProps = { 'aria-label': accessibilityLabel };
   return (
-    <StyledElement {...dataProps} {...ariaProps} />
+    <BaseMaterialIcon {...props} {...dataProps} {...ariaProps} />
   );
 };
 
-Button.propTypes = {
+Icon.propTypes = {
   /** Label for accessibility purposes */
   accessibilityLabel: PropTypes.string,
 
@@ -24,4 +19,4 @@ Button.propTypes = {
   qaLabel: PropTypes.string,
 };
 
-export default Button;
+export default Icon;

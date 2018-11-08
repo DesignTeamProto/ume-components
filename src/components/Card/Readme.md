@@ -9,6 +9,7 @@ import Button from 'ume-components/Card';
 ### Examples
 
 Standard use:
+
 ```js
 <Card>
   <h1>Title</h1>
@@ -16,25 +17,12 @@ Standard use:
 </Card>
 ```
 
-```html
-- provide examples of the standard use
+```jsx static
 <CardMedia imageUrl='./my/fancy/image.png'>
   <span>Fancy Image</span>
 </CardMedia>
 ```
 
-When to use (optional):
-
-```html
-- if needed, provide information on when to use this component
-```
-
-Example when propX is provided:
-
-```html
-- write explanatory intro (what does providing the property do)
-- provide examples for propX
-- if prop is a oneOf, show all options
-
+```js
 <Card outlined="square" />
 ```

@@ -18,6 +18,8 @@ module.exports = {
     ButtonGroup: path.resolve(__dirname, 'src/components/ButtonGroup'),
     Card: path.resolve(__dirname, 'src/components/Card'),
     Checkbox: path.resolve(__dirname, 'src/components/Checkbox'),
+    Fab: path.resolve(__dirname, 'src/components/Fab'),
+    Icon: path.resolve(__dirname, 'src/components/Icon'),
   },
   output: {
     filename: '[name]/index.js',

@@ -1,6 +1,6 @@
 {
   "name": "ume-components",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "UME components library",
   "license": "MIT",
   "main": "Button/index.js",
@@ -12,6 +12,8 @@
     "@material/react-button": "^0.6.1",
     "@material/react-card": "^0.6.1",
     "@material/react-checkbox": "^0.6.1",
+    "@material/react-fab": "^0.6.2",
+    "@material/react-material-icon": "^0.6.2",
     "classnames": "^2.2.6",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.6.0",
