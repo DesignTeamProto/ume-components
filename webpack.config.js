@@ -1,4 +1,5 @@
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 function recursiveIssuer(m) {
@@ -15,10 +16,11 @@ module.exports = {
   entry: {
     Button: path.resolve(__dirname, 'src/components/Button'),
     ButtonGroup: path.resolve(__dirname, 'src/components/ButtonGroup'),
+    Card: path.resolve(__dirname, 'src/components/Card'),
     Checkbox: path.resolve(__dirname, 'src/components/Checkbox'),
   },
   output: {
-    filename: '[name].js',
+    filename: '[name]/index.js',
     libraryTarget: 'commonjs2', // THIS IS THE MOST IMPORTANT LINE! :mindblow: I wasted more than 2 days until realize this was the line most important in all this guide.
   },
   optimization: {
@@ -47,8 +49,11 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: '[name]/index.css',
     }),
+    new CopyWebpackPlugin([
+      { from: 'src/components/dist-package.json', to: 'package.json' },
+    ]),
   ],
   module: {
     rules: [

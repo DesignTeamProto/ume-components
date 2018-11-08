@@ -1,5 +1,5 @@
-const path = require('path');
 const { styles, theme } = require('./styleguide.styles');
+const webpackConfigFile = require('./webpack.config.js');
 
 module.exports = {
   components: 'src/components/**/*.jsx',
@@ -12,8 +12,5 @@ module.exports = {
   skipComponentsWithoutExample: true,
   styles,
   theme,
-  require: [
-    '@babel/polyfill',
-    path.join(__dirname, 'src/App.css'),
-  ],
+  webpackConfig: webpackConfigFile,
 };

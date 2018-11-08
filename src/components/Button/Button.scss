@@ -1,2 +1,10 @@
 @import "src/_theme";
 @import "~@material/react-button/index";
+
+/* Button overrides */
+
+@import "~@material/button/mixins";
+
+.button--terminate {
+  @include mdc-button-container-fill-color($mdc-theme-error);
+}

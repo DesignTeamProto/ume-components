@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import BaseCheckbox from '@material/react-checkbox/dist'; // /index.js is implied
+import BaseCheckbox from '@material/react-checkbox';
+import './Checkbox.scss';
 
 const StyledCheckbox = styled(BaseCheckbox)`
   border-radius: 2px;
