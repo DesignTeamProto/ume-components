@@ -12,8 +12,5 @@ module.exports = {
   skipComponentsWithoutExample: true,
   styles,
   theme,
-<<<<<<< HEAD
-=======
   webpackConfig: webpackConfigFile,
->>>>>>> 8a52c58008cf9e45cf7b105cb4e225e317c11e0f
 };

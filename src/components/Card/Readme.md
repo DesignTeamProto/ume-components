@@ -18,7 +18,7 @@ Standard use:
 ```
 
 ```jsx static
-<CardMedia imageUrl='./my/fancy/image.png'>
+<CardMedia imageUrl="./my/fancy/image.png">
   <span>Fancy Image</span>
 </CardMedia>
 ```

@@ -2,10 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import BaseButton from '@material/react-button';
-<<<<<<< HEAD
-
-=======
->>>>>>> 8a52c58008cf9e45cf7b105cb4e225e317c11e0f
 import './Button.scss';
 
 const StyledButton = styled(BaseButton)`
