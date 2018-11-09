@@ -2,7 +2,12 @@
 @import "~@material/react-button/index";
 
 /* Button overrides */
+<<<<<<< HEAD
 @import "@material/button/mixins";
+=======
+
+@import "~@material/button/mixins";
+>>>>>>> 8a52c58008cf9e45cf7b105cb4e225e317c11e0f
 
 .button--terminate {
   @include mdc-button-container-fill-color($mdc-theme-error);

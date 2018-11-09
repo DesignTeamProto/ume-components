@@ -3,6 +3,7 @@
 Use the following import to include the component in your file:
 
 ```jsx static
+import 'ume-components/Button/index.css';
 import Button from 'ume-components/Button';
 ```
 

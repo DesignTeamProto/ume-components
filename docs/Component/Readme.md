@@ -12,6 +12,9 @@ Standard use:
 
 ```html
 - provide examples of the standard use
+```
+
+```js
 <Component />
 ```
 
@@ -27,7 +30,9 @@ Example when propX is provided:
 - write explanatory intro (what does providing the property do)
 - provide examples for propX
 - if prop is a oneOf, show all options
+```
 
+```js
 <Component propX="square" />
 <Component propX="circle" />
 ```
@@ -39,7 +44,9 @@ Example when propY is provided:
 - provide examples for propY
 - if prop is a oneOf, show all options
 - add props from explained properties (one or two as example)
+```
 
+```js
 <Component propY="green" />
 <Component propY="red" />
 <Component propY="green" propX="square" />
