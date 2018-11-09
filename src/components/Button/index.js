@@ -5,7 +5,7 @@ import BaseButton from '@material/react-button';
 import './Button.scss';
 
 const StyledButton = styled(BaseButton)`
-  border-radius: 2px;
+  border-radius: 1px;
 `;
 
 const Button = (props, { qaLabel, accessibilityLabel }) => {
