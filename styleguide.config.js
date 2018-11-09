@@ -12,8 +12,4 @@ module.exports = {
   skipComponentsWithoutExample: true,
   styles,
   theme,
-  require: [
-    '@babel/polyfill',
-    path.join(__dirname, 'src/App.css'),
-  ],
 };

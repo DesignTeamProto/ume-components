@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import BaseButton from '@material/react-button';
 
-require('./Button.scss');
+import './Button.scss';
 
 const StyledButton = styled(BaseButton)`
   border-radius: 2px;
