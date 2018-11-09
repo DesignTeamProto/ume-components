@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "UME components",
   "homepage": "https://designteamproto.github.io/ume-components/",
-  "license": "See license in LICENSE.md",
+  "license": "GPL-3.0-or-later",
   "dependencies": {
     "@material/animation": "^0.41.0",
     "@material/react-button": "^0.6.1",
@@ -28,7 +28,8 @@
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules ./src/App.scss -o ./src",
     "watch-css": "yarn run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules --watch ./src/App.scss ./src/App.css",
     "start-js": "react-scripts start",
-    "start": "npm-run-all -p watch-css start-js",
+    "start-app": "npm-run-all -p watch-css start-js",
+    "start": "yarn styleguide --open",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom --verbose=true",
