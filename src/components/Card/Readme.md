@@ -11,18 +11,13 @@ import Button from 'ume-components/Card';
 Standard use:
 
 ```js
-<Card>
-  <h1>Title</h1>
-  <p>Content</p>
-</Card>
+ <BaseCard>
+
+  </BaseCard>
 ```
 
 ```jsx static
 <CardMedia imageUrl="./my/fancy/image.png">
   <span>Fancy Image</span>
 </CardMedia>
-```
-
-```js
-<Card outlined="square" />
 ```
