@@ -3,7 +3,7 @@
 Use the following import to include the component in your file:
 
 ```jsx static
-import Button from 'ume-components/Drawer';
+import Drawer, {DrawerAppContent, DrawerContent, DrawerHeader, DrawerTitle} from 'ume-components/Drawer';
 ```
 
 ### Examples
@@ -28,22 +28,20 @@ Standard use:
     </DrawerAppContent>
 ```
 
-```jsx static
-      <div className='drawer-container'>
-        <Drawer>
-          <DrawerHeader>
-            <DrawerTitle tag='h2'>
-              jane.smith@gmail.com
-            </DrawerTitle>
-          </DrawerHeader>
+```js
+    <Drawer>
+        <DrawerHeader>
+        <DrawerTitle tag='h2'>
+            jane.smith@gmail.com
+        </DrawerTitle>
+        </DrawerHeader>
 
-          <DrawerContent>
+        <DrawerContent>
 
-          </DrawerContent>
-        </Drawer>
+        </DrawerContent>
+    </Drawer>
 
-        <DrawerAppContent className='drawer-app-content'>
+    <DrawerAppContent className='drawer-app-content'>
 
-        </DrawerAppContent>
-      </div>
+    </DrawerAppContent>
 ```
